@@ -45,7 +45,6 @@ A typical data science process might look like this:
   - `Null` Values, how to deal with
   - Numerical variable: Distribution
   - Outliers
-
 ```python
 # import library
 import pandas as pd
