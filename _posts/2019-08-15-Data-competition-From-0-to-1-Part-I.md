@@ -136,7 +136,6 @@ plt.xticks(range(0,24))
 plt.legend()
 ```
 
-
 ```python
 # https://github.com/pandas-profiling/pandas-profiling
 import pandas_profiling
@@ -163,7 +162,7 @@ which transforms a huge difference in a smaller one. **Logarithm naturally reduc
 - **Point anomalies**: A single instance of data is anomalous if it's too far off from the rest.
 - **Contextual anomalies**: The abnormality is context specific. This type of anomaly is common in time-series data.
 
-![](img/anomaly.png)
+![]({{ site.url }}/img/anomaly.png)
 
 $$\mathrm{IQR}=Q_{3}-Q_{1}$$
 
@@ -187,7 +186,8 @@ plt.title("Fraud class histogram")
 plt.xlabel("Class")
 plt.ylabel("Frequency")
 ```
-![]("img/class_distribution.png")
+
+![]({{ site.url }}/img/class_distribution.png)
 
 1. Collect more data
 2. Using the weights parameters
@@ -206,12 +206,12 @@ LogisticRegression(class_weight='balanced')
 
 ### Metrics
 **Confusion Matrix**
-![](img/prediction.png)
+![]({{ site.url }}/img/prediction.png)
 - `True Positives` : The cases in which we predicted YES and the actual output was also YES.
 - `True Negatives` : The cases in which we predicted NO and the actual output was NO.
 - `False Positives` : The cases in which we predicted YES and the actual output was NO.
 - `False Negatives` : The cases in which we predicted NO and the actual output was YES.
-![](img/Confusion Matrix2.png)
+![]({{ site.url }}/img/Confusion Matrix2.png)
 
 ```python
 ## homework ##
@@ -334,7 +334,8 @@ plt.show()
 from sklearn.metrics import roc_auc_score
 auc = roc_auc_score(label, prediction)
 ```
-![](img/auc.png)
+
+![]({{ site.url }}/img/auc.png)
 
 ```python
 from numba import jit
@@ -392,7 +393,9 @@ $$\text {Log Loss}=-\frac{1}{N} \sum_{i=1}^{N} y_{i} \cdot \log \left(p\left(y_{
 **Over-Sampling**: adding more examples from the minority class
 
 **Under-Sampling Drawback**: Removing information that may be valuable. This could lead to underfitting and poor generalization to the test set.
-![]avatar(img/resampling.png)
+
+![]avatar({{ site.url }}/img/resampling.png)
+
 ```python
 ### Create A Small Unbalanced Sample Dataset
 from sklearn.utils import resample
@@ -486,7 +489,7 @@ plot_2d_space(X_ran,y_ran,X,y,'over-sampled')
 **Under-sampling: Tomek links**
 **Tomek links** are pairs of very close instances, but of opposite classes. Removing the instances of the majority class of each pair increases the space between the two classes, facilitating the classification process.
 
-![](img/tomek.png)
+![]({{ site.url }}/img/tomek.png)
 
 ```python
 from imblearn.under_sampling import TomekLinks
@@ -500,7 +503,7 @@ plot_2d_space(X_tl, y_tl,X,y, 'Tomek links under-sampling')
 **Over-sampling: SMOTE**
 **SMOTE (Synthetic Minority Oversampling TEchnique)** consists of synthesizing elements for the minority class, based on those that already exist. It works randomly picingk a point from the minority class and computing the k-nearest neighbors for this point. The synthetic points are added between the chosen point and its neighbors.
 
-![](img/smote 2.png)
+![]({{ site.url }}/img/smote 2.png)
 
 ```python
 from imblearn.over_sampling import SMOTE
@@ -514,7 +517,7 @@ plot_2d_space(X_sm, y_sm,X,y, 'SMOTE over-sampling')
 ### Cross-validation: evaluating estimator performance
 Trained model would have a perfect score on training data but would fail to predict anything useful on yet-unseen data. This situation is called `overfitting`. To avoid it, it is common practice when performing a (supervised) machine learning experiment to hold out part of the available data as a test set `X_test`, `y_test`. Here is a flowchart of typical cross validation workflow in model training.
 
-![](img/grid_search_workflow.png)
+![]({{ site.url }}/img/grid_search_workflow.png)
 
 **`k-folds`**:
 - A model is trained using `k-1` of the folds as training data;
@@ -522,12 +525,13 @@ Trained model would have a perfect score on training data but would fail to pred
 
 The performance measure reported by `k-fold` cross-validation is then the average of the values computed in the loop. This approach can be computationally expensive, but does not waste too much data.
 
-![](img/grid_search_cross_validation.png)
+![]({{ site.url }}/img/grid_search_cross_validation.png)
 
 #### Cross validation iterators
 **Cross-validation iterators for i.i.d. data**
 **`K-fold`**
-![](img/sphx_glr_plot_cv_indices_0041.png)
+
+![]({{ site.url }}/img/sphx_glr_plot_cv_indices_0041.png)
 
 ```python
 from sklearn.model_selection import KFold
@@ -539,7 +543,7 @@ for train, test in kf.split(X):
 ```
 
 **`Random permutations cross-validation a.k.a. Shuffle & Split`**
-<img src="picture/sphx_glr_plot_cv_indices_0061.png" width = "700" height = "350" alt="图片名称" align=center />
+![]({{ site.url }}/img/sphx_glr_plot_cv_indices_0061.png)
 ```python
 from sklearn.model_selection import ShuffleSplit
 X = np.arange(10)
@@ -552,7 +556,7 @@ for train_index, test_index in ss.split(X):
 Some classification problems can exhibit a large imbalance in the distribution of the target classes.
 
 **`Stratified k-fold`**
-<img src="picture/sphx_glr_plot_cv_indices_0071.png" width = "700" height = "350" alt="图片名称" align=center />
+![]({{ site.url }}/img/sphx_glr_plot_cv_indices_0071.png)
 ```python
 from sklearn.model_selection import StratifiedKFold
 
@@ -564,14 +568,14 @@ for train, test in skf.split(X, y):
 ```
 
 **`Stratified Shuffle Split`**
-<img src="picture/sphx_glr_plot_cv_indices_0091.png" width = "700" height = "350" alt="图片名称" align=center />
+![]({{ site.url }}/img/sphx_glr_plot_cv_indices_0091.png)
 
 #### Cross-validation iterators for grouped data
 The i.i.d. assumption is broken if the underlying generative process yield groups of dependent samples.
 
 **`Group k-fold`**
 GroupKFold is a variation of k-fold which ensures that the same group is not represented in both testing and training sets.
-<img src="picture/sphx_glr_plot_cv_indices_0051.png" width = "700" height = "350" alt="图片名称" align=center />
+![]({{ site.url }}/img/sphx_glr_plot_cv_indices_0051.png)
 ```python
 from sklearn.model_selection import GroupKFold
 
@@ -585,7 +589,7 @@ for train, test in gkf.split(X, y, groups=groups):
 ```
 
 **`Group Shuffle Split`**
-<img src="picture/sphx_glr_plot_cv_indices_0081.png" width = "700" height = "350" alt="图片名称" align=center />
+![]({{ site.url }}/img/sphx_glr_plot_cv_indices_0081.png)
 ```python
 from sklearn.model_selection import GroupShuffleSplit
 
@@ -611,7 +615,7 @@ for train, test in lpgo.split(X, y, groups=groups):
 
 #### Cross validation of time series data
 `k-fold` 假设数据是 `iid` 的，但是时间序列存在相关性，因此不能简单使用 `k-fold`。
-<img src="picture/sphx_glr_plot_cv_indices_0101.png" width = "700" height = "350" alt="图片名称" align=center />
+![]({{ site.url }}/img/sphx_glr_plot_cv_indices_0101.png)
 ```python
 from sklearn.model_selection import TimeSeriesSplit
 
