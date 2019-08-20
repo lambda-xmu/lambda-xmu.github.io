@@ -78,7 +78,7 @@ ba_track_id: d4944c30a9161ff9830632d01557244e
 
 # Google Analytics
 ga_track_id: 'UA-145892110-1'            # Format: UA-xxxxxx-xx
-ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+ga_domain: lambda-xmu.club               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 
