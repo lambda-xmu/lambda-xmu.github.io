@@ -185,20 +185,20 @@ plt.ylabel("Frequency")
 
 ![]({{ site.url }}/img/class_distribution.png)
 
-1. Collect more data
-2. Using the weights parameters
+- Collect more data
+- Using the weights parameters
 ```python
 LogisticRegression(class_weight='balanced')
 # How to choose weights?
 ```
-3. Changing the performance metric:
-  3.1 `Precision`, `Recall`
-  3.2 `F1-score`
-  3.3 `ROC` curves
-4. Resampling the dataset
-  4.1 `OVER-sampling`
-  4.2 `UNDER-sampling`
-  4.3 `SMOTE`
+- Changing the performance metric:
+  - `Precision`, `Recall`
+  - `F1-score`
+  - `ROC` curves
+- Resampling the dataset
+  - `OVER-sampling`
+  - `UNDER-sampling`
+  - `SMOTE`
 
 ### Metrics
 **Confusion Matrix**
