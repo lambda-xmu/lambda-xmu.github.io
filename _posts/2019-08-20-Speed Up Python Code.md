@@ -11,6 +11,8 @@ tags:
 - Numba
 ---
 
+> Concat: [github: lambda_xmu](https://github.com/lambda-xmu)
+
 The Python library [Numba](http://numba.pydata.org/numba-doc/latest/index.html) gives us an easy way around that challenge — free speed ups without having to write any code other than Python!
 
 ## Introducing Numba
