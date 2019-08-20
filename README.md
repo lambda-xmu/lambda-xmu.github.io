@@ -1,1 +1,1 @@
-## lambda blog: [lambda-xmu.club](lambda-xmu.club)
+## lambda blog: [lambda-xmu.club](http://lambda-xmu.club/)
