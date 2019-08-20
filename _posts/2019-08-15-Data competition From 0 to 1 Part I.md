@@ -20,21 +20,21 @@ tags:
 A typical data science process might look like this:
 
 - Project Scoping / Data Collection
-- Exploratory Analysis
-- Data Cleaning
+- Exploratory Data Analysis
+- Process(Data Cleaning)
 - Feature Engineering
 - Model Training (including cross-validation to tune hyper-parameters)
 - Project Delivery / Insights
 
 ![]({{ site.url }}/img/data competition.png)
 
-## 2. Example: Credit Fraud Detector
+## 2. Example: [Credit Fraud Detector](https://www.kaggle.com/mlg-ulb/creditcardfraud)
 **Competition Describe**
 * The datasets contains transactions made by credit cards in September 2013 by european cardholders.
 * Features V1, V2, ... V28 are the principal components obtained with PCA
-* Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset.
-* The feature ‘Amount’ is the transaction Amount.
-* Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
+* Feature `Time` contains the seconds elapsed between each transaction and the first transaction in the dataset.
+* The feature `Amount` is the transaction Amount.
+* Feature `Class` is the response variable and it takes value 1 in case of fraud and 0 otherwise.
 
 ### EDA(Exploratory Data Analysis)
 - Gathering a basic sense of data
@@ -146,7 +146,7 @@ profile.to_file(output_file=Path("./credit_fraud_detector.html"))
 **EDA Conclusion**
 >- The data set is highly skewed, consisting of 492 frauds in a total of 284,807 observations. This resulted in only 0.172% fraud cases.
 >- There is no missing value in the dataset.
->- The ‘Time’ and ‘Amount’ features are not transformed data.
+>- The `Time` and `Amount` features are not transformed data.
 
 #### Why taking log transformation of continuous variables?
 Amount distribution is "power law", meaning that the vast majority of amount are small and very few are big.
@@ -192,13 +192,13 @@ LogisticRegression(class_weight='balanced')
 # How to choose weights?
 ```
 3. Changing the performance metric:
-  2.1 `Precision`, `Recall`
-  2.2 `F1-score`
-  2.3 `ROC` curves
+  3.1 `Precision`, `Recall`
+  3.2 `F1-score`
+  3.3 `ROC` curves
 4. Resampling the dataset
-  3.1 `OVER-sampling`
-  3.2 `UNDER-sampling`
-  3.3 `SMOTE`
+  4.1 `OVER-sampling`
+  4.2 `UNDER-sampling`
+  4.3 `SMOTE`
 
 ### Metrics
 **Confusion Matrix**
