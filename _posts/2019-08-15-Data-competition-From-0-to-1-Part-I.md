@@ -25,7 +25,7 @@ A typical data science process might look like this:
 - Feature Engineering
 - Model Training (including cross-validation to tune hyper-parameters)
 - Project Delivery / Insights
-![](img/data competition.png)
+![]({{ site.url }}/img/data competition.png)
 
 ## 2. Example: Credit Fraud Detector
 **Competition Describe**
