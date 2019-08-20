@@ -25,7 +25,7 @@ A typical data science process might look like this:
 - Feature Engineering
 - Model Training (including cross-validation to tune hyper-parameters)
 - Project Delivery / Insights
-@import "picture/data competition.png"
+![](img/data competition.png)
 
 ## 2. Example: Credit Fraud Detector
 **Competition Describe**
@@ -162,7 +162,7 @@ which transforms a huge difference in a smaller one. **Logarithm naturally reduc
 - **Point anomalies**: A single instance of data is anomalous if it's too far off from the rest.
 - **Contextual anomalies**: The abnormality is context specific. This type of anomaly is common in time-series data.
 
-![]("img/anomaly.png")
+![](img/anomaly.png)
 
 $$\mathrm{IQR}=Q_{3}-Q_{1}$$
 
@@ -205,12 +205,12 @@ LogisticRegression(class_weight='balanced')
 
 ### Metrics
 **Confusion Matrix**
-<img src="img/prediction.png" width = "400" height = "300" alt="图片名称" align=center />
+![](img/prediction.png)
 - `True Positives` : The cases in which we predicted YES and the actual output was also YES.
 - `True Negatives` : The cases in which we predicted NO and the actual output was NO.
 - `False Positives` : The cases in which we predicted YES and the actual output was NO.
 - `False Negatives` : The cases in which we predicted NO and the actual output was YES.
-<img src="img/Confusion Matrix2.png" width = "600" height = "200" alt="图片名称" align=center />
+![](img/Confusion Matrix2.png)
 
 ```python
 ## homework ##
@@ -333,8 +333,7 @@ plt.show()
 from sklearn.metrics import roc_auc_score
 auc = roc_auc_score(label, prediction)
 ```
-
-<img src="img/auc.png" width = "500" height = "400" alt="图片名称" align=center />
+![](img/auc.png)
 
 ```python
 from numba import jit
@@ -392,7 +391,7 @@ $$\text {Log Loss}=-\frac{1}{N} \sum_{i=1}^{N} y_{i} \cdot \log \left(p\left(y_{
 **Over-Sampling**: adding more examples from the minority class
 
 **Under-Sampling Drawback**: Removing information that may be valuable. This could lead to underfitting and poor generalization to the test set.
-<img src="img/resampling.png" width = "700" height = "200" alt="图片名称" align=center />
+![]avatar(img/resampling.png)
 ```python
 ### Create A Small Unbalanced Sample Dataset
 from sklearn.utils import resample
@@ -486,7 +485,7 @@ plot_2d_space(X_ran,y_ran,X,y,'over-sampled')
 **Under-sampling: Tomek links**
 **Tomek links** are pairs of very close instances, but of opposite classes. Removing the instances of the majority class of each pair increases the space between the two classes, facilitating the classification process.
 
-<img src="img/tomek.png" width = "700" height = "200" alt="图片名称" align=center />
+![](img/tomek.png)
 
 ```python
 from imblearn.under_sampling import TomekLinks
@@ -500,7 +499,7 @@ plot_2d_space(X_tl, y_tl,X,y, 'Tomek links under-sampling')
 **Over-sampling: SMOTE**
 **SMOTE (Synthetic Minority Oversampling TEchnique)** consists of synthesizing elements for the minority class, based on those that already exist. It works randomly picingk a point from the minority class and computing the k-nearest neighbors for this point. The synthetic points are added between the chosen point and its neighbors.
 
-<img src="img/smote 2.png" width = "700" height = "200" alt="图片名称" align=center />
+![](img/smote 2.png)
 
 ```python
 from imblearn.over_sampling import SMOTE
@@ -514,7 +513,7 @@ plot_2d_space(X_sm, y_sm,X,y, 'SMOTE over-sampling')
 ### Cross-validation: evaluating estimator performance
 Trained model would have a perfect score on training data but would fail to predict anything useful on yet-unseen data. This situation is called `overfitting`. To avoid it, it is common practice when performing a (supervised) machine learning experiment to hold out part of the available data as a test set `X_test`, `y_test`. Here is a flowchart of typical cross validation workflow in model training.
 
-<img src="picture/grid_search_workflow.png" width = "700" height = "400" alt="图片名称" align=center />
+![](img/grid_search_workflow.png)
 
 **`k-folds`**:
 - A model is trained using `k-1` of the folds as training data;
@@ -522,12 +521,12 @@ Trained model would have a perfect score on training data but would fail to pred
 
 The performance measure reported by `k-fold` cross-validation is then the average of the values computed in the loop. This approach can be computationally expensive, but does not waste too much data.
 
-<img src="picture/grid_search_cross_validation.png" width = "700" height = "500" alt="图片名称" align=center />
+![](img/grid_search_cross_validation.png)
 
 #### Cross validation iterators
 **Cross-validation iterators for i.i.d. data**
 **`K-fold`**
-<img src="picture/sphx_glr_plot_cv_indices_0041.png" width = "700" height = "350" alt="图片名称" align=center />
+![](img/sphx_glr_plot_cv_indices_0041.png)
 
 ```python
 from sklearn.model_selection import KFold
