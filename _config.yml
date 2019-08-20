@@ -98,8 +98,8 @@ service-worker: true
 
 # Friends
 friends: [
-#     {
-#         title: "WY",
-#         href: "http://zhengwuyang.com"
-#     }
+    {
+        title: "drop-out",
+        href: "https://github.com/drop-out"
+    }
 ]
