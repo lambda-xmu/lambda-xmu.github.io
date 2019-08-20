@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      2019-08-15-Data Competition: From 0 to 1 Part I
+title:      2019-08-15-Data-Competition-From-0-to-1-Part-I
 subtitle:   "Credit Fraud Detector Example"
 date:       2018-08-15 12:00:00
 author:     "lambda"
