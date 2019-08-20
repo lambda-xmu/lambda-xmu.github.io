@@ -244,7 +244,7 @@ confusion_matrix(label, prediction)
 
 **Accuracy**
 
-$$\text{Accuracy}=\frac{\text{True Positives}+\text{False Negatives}}{\text{Total Number of Predictions}}$$
+$$\text{Accuracy}=\frac{\text{True Positives}+\text{True Negatives}}{\text{Total Number of Predictions}}$$
 - It works well only if there are equal number of samples belonging to each class.
 
 ```python
