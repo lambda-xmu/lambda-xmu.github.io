@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      2019-08-20-Speed-Up-Python-Code
-subtitle:   "Nuba Tutorial"
+subtitle:   "Numba Tutorial"
 date:       2018-08-20 12:00:00
 author:     "lambda"
 header-img: "img/post-bg-2015.jpg"
