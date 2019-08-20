@@ -173,6 +173,7 @@ The higher $k$ is (ex: 3), the less outliers will detect, and the lower $k$ is (
 
 ```diff
 - We want to focus more on "extreme outliers" rather than just outliers.
+```
 
 ### Unbalance
 ```python
