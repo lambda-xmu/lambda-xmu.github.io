@@ -171,11 +171,7 @@ $$\text{Outliers}: <Q_1-k \cdot IQR$$
 
 The higher $k$ is (ex: 3), the less outliers will detect, and the lower $k$ is (ex: 1.5) the more outliers it will detect.
 
-<p align="left" style="font-size: 25px;">
-<font color=red>
-We want to focus more on "extreme outliers" rather than just outliers.
-</font>
-</p>
+<font color=red size=7 face="黑体">We want to focus more on "extreme outliers" rather than just outliers.</font> 
 
 ### Unbalance
 ```python
