@@ -313,7 +313,8 @@ def my_f1_score(y_true, y_pred):
 from sklearn.metrics import f1_score
 f1_score(label, prediction)
 ```
-<font color=red>We often assume that we defined a threshold of 0.5 for selecting which samples are predicted as positive. If we change this threshold the performance metrics will change</font> It would be nice to be able to evaluate the performance of a model without the need to select an arbitrary threshold.  This is precisely what AUC-ROC is providing.
+
+**We often assume that we defined a threshold of 0.5 for selecting which samples are predicted as positive. If we change this threshold the performance metrics will change.** It would be nice to be able to evaluate the performance of a model without the need to select an arbitrary threshold. This is precisely what `AUC-ROC` is providing.
 
 **Area Under Curve (AUC)**--Area Under the curve of the Receiver Operating Characteristic (AUROC)
 
