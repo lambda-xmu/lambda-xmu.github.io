@@ -243,6 +243,7 @@ confusion_matrix(label, prediction)
 ```
 
 **Accuracy**
+
 $$\text{Accuracy}=\frac{\text{True Positives}+\text{False Negatives}}{\text{Total Number of Predictions}}$$
 - It works well only if there are equal number of samples belonging to each class.
 
@@ -259,6 +260,7 @@ from sklearn.metrics import accuracy_score
 accuracy_score(label, prediction)
 ```
 **Precision**
+
 $$\text{Precision}=\frac{\text{True Positives}}{\text{True Positives}+\text{False Positives}}$$
 
 ```python
@@ -275,6 +277,7 @@ precision_score(label, prediction)
 ```
 
 **Recall**
+
 $$\text{Recall}=\frac{\text{True Positives}}{\text{True Positives}+\text{False Negatives}}$$
 ```python
 # homework
@@ -290,6 +293,7 @@ recall_score(label, prediction)
 ```
 
 **F1 Score**
+
 The f1 score is the harmonic mean(调和平均) of recall and precision, with a higher score as a better model.
 $$F 1=\frac{2}{\frac{1}{\text { precision }}+\frac{1}{\text { recall }}}=\frac{2 * \text { (precision * recall) }}{\text { precision }+\text {recall}}$$
 ```python
@@ -368,12 +372,15 @@ roc_auc_score(y_true, y_pred)
 You can learn more about [ROC on the Wikipedia page](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) and [What does AUC stand for and what is it?](https://stats.stackexchange.com/questions/132777/what-does-auc-stand-for-and-what-is-it).
 
 **Mean Absolute Error(MAE)**
+
 $$\text {MAE}=\frac{1}{N} \sum_{j=1}^{N}\left|y_{j}-\hat{y}_{j}\right|$$
 
 **Mean Squared Error(MSE)**
+
 $$\text {MSE}=\frac{1}{N} \sum_{j=1}^{N}\left(y_{j}-\hat{y}_{j}\right)^{2}$$
 
 **Log Loss**
+
 `AUC` only takes into account **the order of probabilities** and hence it does not take into account the model’s capability to predict higher probability for samples more likely to be positive.
 
 $$\text {Log Loss}=-\frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{M} y_{i j} * \log \left(p(y_{i j})\right)$$
@@ -385,6 +392,7 @@ $$\text {Log Loss}=-\frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{M} y_{i j} * \log \le
 $$\text {Log Loss}=-\frac{1}{N} \sum_{i=1}^{N} y_{i} \cdot \log \left(p\left(y_{i}\right)\right)+\left(1-y_{i}\right) \cdot \log \left(1-p\left(y_{i}\right)\right)$$
 
 ### Resampling
+
 **Under-Sampling**: samples from the majority class
 **Over-Sampling**: adding more examples from the minority class
 
@@ -483,6 +491,7 @@ print('The new data contains {} rows '.format(X_ran.shape[0]))
 plot_2d_space(X_ran,y_ran,X,y,'over-sampled')
 ```
 **Under-sampling: Tomek links**
+
 **Tomek links** are pairs of very close instances, but of opposite classes. Removing the instances of the majority class of each pair increases the space between the two classes, facilitating the classification process.
 
 ![]({{ site.url }}/img/tomek.png)
@@ -497,6 +506,7 @@ X_tl, y_tl, id_tl = tl.fit_sample(X, y)
 plot_2d_space(X_tl, y_tl,X,y, 'Tomek links under-sampling')
 ```
 **Over-sampling: SMOTE**
+
 **SMOTE (Synthetic Minority Oversampling TEchnique)** consists of synthesizing elements for the minority class, based on those that already exist. It works randomly picingk a point from the minority class and computing the k-nearest neighbors for this point. The synthetic points are added between the chosen point and its neighbors.
 
 ![]({{ site.url }}/img/smote 2.png)
@@ -511,6 +521,7 @@ plot_2d_space(X_sm, y_sm,X,y, 'SMOTE over-sampling')
 ```
 
 ### Cross-validation: evaluating estimator performance
+
 Trained model would have a perfect score on training data but would fail to predict anything useful on yet-unseen data. This situation is called `overfitting`. To avoid it, it is common practice when performing a (supervised) machine learning experiment to hold out part of the available data as a test set `X_test`, `y_test`. Here is a flowchart of typical cross validation workflow in model training.
 
 ![]({{ site.url }}/img/grid_search_workflow.png)
