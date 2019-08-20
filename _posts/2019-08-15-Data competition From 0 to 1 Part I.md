@@ -376,8 +376,8 @@ $$\text {MSE}=\frac{1}{N} \sum_{j=1}^{N}\left(y_{j}-\hat{y}_{j}\right)^{2}$$
 **Log Loss**
 `AUC` only takes into account **the order of probabilities** and hence it does not take into account the model’s capability to predict higher probability for samples more likely to be positive.
 
-
 $$\text {Log Loss}=-\frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{M} y_{i j} * \log \left(p(y_{i j})\right)$$
+
 - $y_{ij}$: whether sample $i$ belongs to class $j$ or not
 - $p(y_{i j})$: the probability of sample $i$ belonging to class $j$
 
