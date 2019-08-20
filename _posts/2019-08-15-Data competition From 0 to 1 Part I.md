@@ -245,6 +245,7 @@ confusion_matrix(label, prediction)
 **Accuracy**
 
 $$\text{Accuracy}=\frac{\text{True Positives}+\text{True Negatives}}{\text{Total Number of Predictions}}$$
+
 - It works well only if there are equal number of samples belonging to each class.
 
 ```python
@@ -279,6 +280,7 @@ precision_score(label, prediction)
 **Recall**
 
 $$\text{Recall}=\frac{\text{True Positives}}{\text{True Positives}+\text{False Negatives}}$$
+
 ```python
 # homework
 def my_recall_score(y_true, y_pred):
@@ -295,7 +297,9 @@ recall_score(label, prediction)
 **F1 Score**
 
 The f1 score is the harmonic mean(调和平均) of recall and precision, with a higher score as a better model.
+
 $$F 1=\frac{2}{\frac{1}{\text { precision }}+\frac{1}{\text { recall }}}=\frac{2 * \text { (precision * recall) }}{\text { precision }+\text {recall}}$$
+
 ```python
 # homework
 def my_f1_score(y_true, y_pred):
@@ -315,8 +319,13 @@ f1_score(label, prediction)
 
 AUC is used for binary classification problem.
 
-- True Positive Rate (Sensitivity) : the proportion of positive data points that are correctly considered as positive, with respect to all positive data points.$$\text{True Positive Rate}=\frac{\text{True Positives}}{\text{True Positives}+\text{False Negatives}}$$
-- False Positive Rate (Specificity) : the proportion of negative data points that are mistakenly considered as positive, with respect to all negative data points.$$\text{False Positive Rate}=\frac{\text{False Positives}}{\text{False Positives}+\text{True Negatives}}$$
+- True Positive Rate (Sensitivity) : the proportion of positive data points that are correctly considered as positive, with respect to all positive data points.
+
+$$\text{True Positive Rate}=\frac{\text{True Positives}}{\text{True Positives}+\text{False Negatives}}$$
+
+- False Positive Rate (Specificity) : the proportion of negative data points that are mistakenly considered as positive, with respect to all negative data points.
+
+$$\text{False Positive Rate}=\frac{\text{False Positives}}{\text{False Positives}+\text{True Negatives}}$$
 
 `FPR` and `TPR` bot hare computed at threshold values such as $(0.00, 0.02, 0.04, …., 1.00)$ and a graph is drawn. `AUC` is the area under the curve of plot `False Positive Rate` vs `True Positive Rate` at different points in $[0, 1]$. The resulting curve is called ROC curve (Receiver Operating Characteristic curve).
 
