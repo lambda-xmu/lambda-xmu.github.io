@@ -172,8 +172,11 @@ data['day_name'] = data['date'].dt.day_name()
 ```
 
 - **Binning (分箱)**: Binning can be applied on both categorical and numerical data. When there is a feature with many classes that have low sample counts. You can try grouping similar classes and then grouping the remaining ones into a single `Other` class [**Grouping sparse classes**].
+
 ![]({{ site.url }}/img/binning.png)
+
 The main motivation of binning is to make the model more robust and prevent overfitting, however, it has a cost to the performance. Every time you bin something, you sacrifice information and make your data more regularized.
+
 ```python
 # Numerical Binning Example
 data['bin'] = pd.cut(data['value'], bins=[0,30,70,100], labels=["Low", "Mid", "High"])
@@ -189,10 +192,13 @@ choices = ['Europe', 'Europe', 'South America', 'South America']
 
 data['Continent'] = np.select(conditions, choices, default='Other')  # Grouping sparse classes
 ```
+
 **For numerical columns, except for some obvious overfitting cases, binning might be redundant for some kind of algorithms, due to its effect on model performance. However, for categorical columns, the labels with low frequencies probably affect the robustness of statistical models negatively.**
 
 - **One-hot encoding**: Transform categories into individual binary (0 or 1) features
+
 ![]({{ site.url }}/img/one_hot.png)
+
 ```python
 encoded_columns = pd.get_dummies(data['column'])
 data = data.join(encoded_columns).drop('column', axis=1)
