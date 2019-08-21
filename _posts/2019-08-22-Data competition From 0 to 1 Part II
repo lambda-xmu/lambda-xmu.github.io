@@ -8,10 +8,8 @@ header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
 - Data Competition
-- EDA
-- Unbalance
-- Metrics
-- Sampling
+- Feature Engineering
+- Processing
 ---
 
 Concat: [github: lambda_xmu](https://github.com/lambda-xmu)
