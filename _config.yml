@@ -101,5 +101,9 @@ friends: [
     {
         title: "drop-out",
         href: "https://github.com/drop-out"
+    },
+    {
+      title: "Smile",
+      href: "https://github.com/Smilexuhc/Data-Competition-TopSolution"
     }
 ]
