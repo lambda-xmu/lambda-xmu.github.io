@@ -661,3 +661,7 @@ lr.fit(X_train, y_train)
 y_pred = lr.predict(X_test)
 # compare y_test with y_pred
 ```
+
+## Reference
+- https://www.kaggle.com/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets
+- https://towardsdatascience.com/metrics-to-evaluate-your-machine-learning-algorithm-f10ba6e38234
