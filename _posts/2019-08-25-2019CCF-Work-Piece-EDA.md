@@ -99,3 +99,6 @@ tags:
 代码详见：[2019CCF Work_Piece EDA](https://github.com/lambda-xmu/2019CCF/blob/master/Work_Piece/2019CCF-work_piece-EDA.ipynb)
 
 # 未完待续
+
+## 参考：
+https://www.kaggle.com/robikscube/ieee-fraud-detection-first-look-and-eda
