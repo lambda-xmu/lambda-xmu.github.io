@@ -280,3 +280,7 @@ Good features to engineer…
 - Are informed by domain knowledge or exploratory analysis.
 - Must have the potential to be predictive. Don’t just create features for the sake of it.
 - **Never touch the target variable**.（穿越问题）
+
+## Reference
+- https://towardsdatascience.com/feature-engineering-for-machine-learning-3a5e293a5114
+- https://medium.com/open-machine-learning-course/open-machine-learning-course-topic-6-feature-engineering-and-feature-selection-8b94f870706a
