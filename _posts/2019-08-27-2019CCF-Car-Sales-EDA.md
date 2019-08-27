@@ -13,6 +13,8 @@ tags:
 - Baseline
 ---
 
+> Concat: [github: lambda_xmu](https://github.com/lambda-xmu)
+
 赛题地址：[乘用车细分市场销量预测](https://www.datafountain.cn/competitions/352)
 
 ## DATA BACKGROUD
