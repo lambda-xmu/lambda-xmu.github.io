@@ -108,7 +108,7 @@ tags:
 ![]({{ site.url }}/img/各省Sedan类型车销售量占比情况.png)
 ![]({{ site.url }}/img/各省SUV类型车销售量占比情况.png)
 ![]({{ site.url }}/img/各省MPV类型车销售量占比情况.png)
-![]({{ site.url }}/img/各省Hatchback类型车销售量占比情况.png)
+![]({{ site.url }}/img/各省Hatchbackle类型车销售量占比情况.png)
 
 ## 未完待续...
 >有什么需求可以在评论区提出
