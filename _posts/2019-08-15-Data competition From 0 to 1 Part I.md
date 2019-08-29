@@ -408,7 +408,7 @@ $$\text {Log Loss}=-\frac{1}{N} \sum_{i=1}^{N} y_{i} \cdot \log \left(p\left(y_{
 
 **Under-Sampling Drawback**: Removing information that may be valuable. This could lead to underfitting and poor generalization to the test set.
 
-![]avatar({{ site.url }}/img/resampling.png)
+![]({{ site.url }}/img/resampling.png)
 
 ```python
 ### Create A Small Unbalanced Sample Dataset
