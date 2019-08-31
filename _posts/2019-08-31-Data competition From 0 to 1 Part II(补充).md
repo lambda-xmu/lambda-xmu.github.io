@@ -14,8 +14,8 @@ tags:
 
 Concat: [github: lambda_xmu](https://github.com/lambda-xmu)
 
-> 本文在包大人基础之上进行补充：
-PPT：[Kaggle比赛的进阶技巧和国内比赛前十套路](https://zhuanlan.zhihu.com/p/71609765?utm_source=wechat_session&utm_medium=social&utm_oi=588099158540423168&s_r=0&from=singlemessage&isappinstalled=0)
+> 本文在包大人基础之上进行补充：  
+PPT：[Kaggle比赛的进阶技巧和国内比赛前十套路](https://zhuanlan.zhihu.com/p/71609765?utm_source=wechat_session&utm_medium=social&utm_oi=588099158540423168&s_r=0&from=singlemessage&isappinstalled=0)  
 视频：https://www.bilibili.com/video/av57480953/?p=2
 
 ## 特征工程
