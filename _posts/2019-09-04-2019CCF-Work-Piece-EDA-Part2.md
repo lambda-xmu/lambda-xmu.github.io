@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      2019-09-04-2019CCF-Work-Piece-EDA
+title:      2019-09-04-2019CCF-Work-Piece-EDA-Part2
 subtitle:   "离散制造过程中典型工件的质量符合率预测"
 date:       2018-09-04 12:00:00
 author:     "lambda"
@@ -17,7 +17,7 @@ tags:
 
 赛题地址：[离散制造过程中典型工件的质量符合率预测](https://www.datafountain.cn/competitions/351)
 
-[2019CCF Work Piece EDA Part 1](http://lambda-xmu.club/2018/08/25/2019CCF-Work-Piece-EDA/)
+EDA Part1: [2019CCF Work Piece EDA Part 1](http://lambda-xmu.club/2018/08/25/2019CCF-Work-Piece-EDA/)
 
 在赛题中，只要删除`Parameter1`、`Parameter2`、`Parameter3`、`Parameter4`成绩会提升很多，但是为什么会提升很多，因此来看下不同的`label`在`Parameter`中的分布情况
 
