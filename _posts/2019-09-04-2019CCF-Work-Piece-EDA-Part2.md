@@ -36,3 +36,4 @@ EDA Part1: [2019CCF Work Piece EDA Part 1](http://lambda-xmu.club/2018/08/25/201
 ![]({{ site.url }}/img/Parameter9.png)
 ![]({{ site.url }}/img/Parameter10.png)
 
+代码地址：[2019CCF work_piece EDA_Part2](https://github.com/lambda-xmu/2019CCF/blob/master/Work_Piece/2019CCF-work_piece-EDA_Part2.ipynb)
