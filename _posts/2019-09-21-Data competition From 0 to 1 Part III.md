@@ -203,3 +203,7 @@ Word2vec 依靠了skip-gram 与Continuous Bag of Word (CBOW) 的方法来实作�
 
 ## Model
 ![]({{ site.url }}/img/model.png)
+
+**Paper**：
+
+[Entity Embeddings of Categorical Variables](https://arxiv.org/abs/1604.06737)
