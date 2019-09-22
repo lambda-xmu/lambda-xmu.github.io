@@ -2,7 +2,7 @@
 layout:     post
 title:      2019-08-31-Data-competition-From-0-to-1-Part-II(补充)
 subtitle:   "特征工程小节"
-date:       2018-08-31 12:00:00
+date:       2019-08-31 12:00:00
 author:     "lambda"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
