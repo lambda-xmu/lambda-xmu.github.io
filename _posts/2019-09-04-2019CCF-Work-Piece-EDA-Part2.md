@@ -2,7 +2,7 @@
 layout:     post
 title:      2019-09-04-2019CCF-Work-Piece-EDA-Part2
 subtitle:   "离散制造过程中典型工件的质量符合率预测"
-date:       2018-09-04 12:00:00
+date:       2019-09-04 12:00:00
 author:     "lambda"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
