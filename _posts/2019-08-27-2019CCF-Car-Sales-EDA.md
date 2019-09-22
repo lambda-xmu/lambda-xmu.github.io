@@ -2,7 +2,7 @@
 layout:     post
 title:      2019-08-27-2019CCF-Car-Sales-EDA
 subtitle:   "乘用车细分市场销量预测"
-date:       2018-08-27 12:00:00
+date:       2019-08-27 12:00:00
 author:     "lambda"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
