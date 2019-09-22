@@ -2,7 +2,7 @@
 layout:     post
 title:      2019-09-21-Data-competition-From-0-to-1-Part-III
 subtitle:   "Rossmann Store Sales"
-date:       2018-09-21 12:00:00
+date:       2019-09-21 12:00:00
 author:     "lambda"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
