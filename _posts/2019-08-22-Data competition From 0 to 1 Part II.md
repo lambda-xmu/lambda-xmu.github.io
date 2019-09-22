@@ -2,7 +2,7 @@
 layout:     post
 title:      2019-08-22-Data-competition-From-0-to-1-Part-II
 subtitle:   "Feature Engineering Techniques"
-date:       2018-08-22 12:00:00
+date:       2019-08-22 12:00:00
 author:     "lambda"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
