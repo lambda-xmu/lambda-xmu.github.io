@@ -18,44 +18,7 @@ Concat: [github: lambda_xmu](https://github.com/lambda-xmu)
 
 FFM 模型中引入了类别的概念，即 field，将相同性质的特征归于同一个 field。
 
-<table border=5 cellpadding=0 cellspacing=0 width=609 style='border-collapse:
- collapse;table-layout:fixed;width:455pt;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
- text-decoration-style: initial;text-decoration-color: initial'>
- <col width=87 span=7 style='width:65pt'>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl63 width=87 style='height:18.0pt;width:65pt'>&nbsp;field</td>
-  <td class=xl63 width=87 style='width:65pt'>field1年龄</td>
-  <td colspan=3 class=xl63 width=261 style='width:195pt'>field2城市</td>
-  <td colspan=2 class=xl63 width=174 style='width:130pt'>field3性别</td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl63 style='height:18.0pt'>&nbsp;feature</td>
-  <td class=xl63>x1年龄</td>
-  <td class=xl63>x2北京</td>
-  <td class=xl63>x3上海</td>
-  <td class=xl63>x4深圳</td>
-  <td class=xl63>x5男</td>
-  <td class=xl63>x6女</td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl63 style='height:18.0pt'>用户1</td>
-  <td class=xl63>23</td>
-  <td class=xl63>1</td>
-  <td class=xl63>0</td>
-  <td class=xl63>0</td>
-  <td class=xl63>1</td>
-  <td class=xl63>0</td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl63 style='height:18.0pt'>用户2</td>
-  <td class=xl63>31</td>
-  <td class=xl63>0</td>
-  <td class=xl63>0</td>
-  <td class=xl63>1</td>
-  <td class=xl63>0</td>
-  <td class=xl63>1</td>
- </tr>
-</table>
+![]({{ site.url }}/img/ffm.png)
 
 在 FFM 中，每一维特征 $x_i$，针对其它特征的每一种 field $f_j$，都会学习一个隐向量 $v_{i,f_j}$，即 $v_i$ 成了一个二维向量 $v_{𝐹\times 𝐾}$，$F$ 是 Field 的总个数。因此，隐向量不仅与特征相关，也与 field 相关。这也是 FFM 中 “field-aware” 的由来。
 
